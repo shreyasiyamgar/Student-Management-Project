@@ -1,0 +1,118 @@
+body {
+  min-height: 100vh;
+  background-color: #f9fafb; /* Tailwind's bg-gray-50 */
+  padding: 1.5rem; /* Tailwind's p-6 */
+  font-family: sans-serif;
+}
+
+/* Header styles */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+/* Profile Section */
+.profile-circle {
+  width: 2.5rem;
+  height: 2.5rem;
+  background-color: #22c55e; /* bg-green-500 */
+  border-radius: 9999px;
+  color: white;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.student-name {
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.profile-label {
+  color: #4b5563; /* text-gray-600 */
+}
+
+.logout-button {
+  background-color: #facc15; /* bg-yellow-500 */
+  color: black;
+  padding: 0.5rem 1rem;
+  border-radius: 0.75rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.logout-button:hover {
+  background-color: #eab308; /* hover:bg-yellow-600 */
+}
+
+/* Grid container */
+.dashboard-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+}
+
+@media (min-width: 640px) {
+  .dashboard-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 768px) {
+  .dashboard-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+/* Card styles */
+.card {
+  background-color: white;
+  text-align: center;
+  cursor: pointer;
+  transition: box-shadow 0.2s ease;
+  border-radius: 1rem;
+  box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+  padding: 1rem;
+}
+
+.card:hover {
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+.card-content {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Icon inside card */
+.card-icon {
+  width: 2rem;
+  height: 2rem;
+  margin-bottom: 0.5rem;
+  color: #2563eb; /* text-blue-600 */
+}
+
+.card-label {
+  font-weight: 500;
+}
+
+/* Doubt section */
+.doubt-section {
+  margin-top: 2rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  color: #7c3aed; /* text-purple-700 */
+}
+
+.doubt-icon {
+  width: 1.5rem;
+  height: 1.5rem;
+}
